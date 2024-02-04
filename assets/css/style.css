@@ -1,7 +1,7 @@
 /* Default Bootstrap Example CSS */
 body {
-background: rgb(26, 26, 27);
-
+background: rgb(253, 253, 253);
+font-family: 'Oswald', sans-serif !important;
 }
 :root{
 yellow: #e9760b ;
@@ -16,6 +16,10 @@ p{
 color:white;
 font-size:30px
 }
+@media screen and (min-width: 768px) {
+.bd-placeholder-img-lg {
+  font-size: 3.5rem;
+}
 
 .bd-placeholder-img {
 font-size: 1.125rem;
@@ -24,11 +28,7 @@ text-anchor: middle;
 -moz-user-select: none;
 user-select: none;
 }
-/* @media (min-width: 768px) {
-.bd-placeholder-img-lg {
-  font-size: 3.5rem;
-}
-} */
+
 #navbarHeader .list-unstyled > li > a:hover {
 color: #e9760b !important;
 background-color: transparent;
@@ -86,37 +86,37 @@ align-items: center;
 .Hero_title {
 
 font-size: 5rem;
-font-weight: 1000;
+font-weight: 1rem;
 line-height: 2.5rem;
 letter-spacing: .00735em;
 /* text-transform: none; */
 /* webkit-font-smoothing: auto;
 font-smooth: auto; */
-color: #fffdfd;
-font-size: 60px;
+color: #f7f5f5;
+font-size: 50px;
 line-height: 1em;
 padding: 2rem ;
 display: flex;
 justify-content: center;
+
 align-items: center;
-margin: 30px 0
+margin: 20px 0
 }
 
 .Hero_description {
 
-
 font-weight: 100;
 line-height: 3rem;
 letter-spacing: .00735em;
-
+text-align-last: auto;
 
 color: #fff;
-font-size: 30px;
+font-size: 25px;
 line-height: 1em;
 padding: 2rem ;
 border: 6px #f5c518;
 border-left-style: solid;
-margin: 16px 0
+margin: 10px 0
 }
 
 #searchContainer {
@@ -183,8 +183,7 @@ width:auto;
 height: 600px;
 margin-top:10px;
 /* justify-content: center; */
-display:flex;
-justify-content: end;
+text-align: right;
 align-items: center;
 }
 
@@ -208,7 +207,7 @@ line-height: 2rem;
 padding: 2rem ;
 text-align: right;
 align-items: center;
-margin: 16px 
+margin: 0px 
 }
 /* #displayContainer .Hero_buttons {
 display:flex;
@@ -302,6 +301,9 @@ border-radius: 8px;
   color: #f5c518;
   text-align: left;
 }
+footer{
+  background-color: #3b3b3d;
+}
 .footer_description {
 font-weight: 100;
 
@@ -315,23 +317,207 @@ border: 6px #f5c518;
 border-left-style: solid;
 background-color: rgb(26, 26, 27,0.1);
 margin: 16px 0
-/* .footer_logo {
-font-weight: 100; */
-/*  
-line-height: 3rem;
-letter-spacing: .00735em;
-color: #fff;
-font-size: 30px;
-line-height: 1em;
-padding: 2rem ;
-border: 6px #f5c518;
-border-left-style: solid;
-margin: 16px 0 */
 
 }
 
-@media (min-width: 768px) {
-.bd-placeholder-img-lg {
-  font-size: 3.5rem;
+
 }
+
+@media screen and (max-width: 480px) {
+  .Hero_title__S57s_ {
+      font-size:35px
+  }
+
+  .navbar-nav .nav-item {
+    text-decoration: none;
+    display:none;
+    
+    
+    }
+  .masthead {
+    color: #3b3b3d !important;
+    margin:0;
+    padding:0;
+    
+    }
+    .Hero_backgroundImage {
+    background-image: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3)),linear-gradient(180deg,transparent 14%,rgba(0,0,0,.3) 49%,rgba(0,0,0,.3) 85%,transparent),url(../../assets/media/screentracker-shows.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed; 
+    width:auto;
+    height: 600px;
+    }
+    
+    .Hero_section{
+    
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    }
+    
+    .Hero_title {
+    
+    font-size: 5rem;
+    font-weight: 1rem;
+    line-height: 2.5rem;
+    letter-spacing: .00735em;
+    /* text-transform: none; */
+    /* webkit-font-smoothing: auto;
+    font-smooth: auto; */
+    color: #f7f5f5;
+    font-size: 50px;
+    line-height: 1em;
+    padding: 2rem ;
+    display: flex;
+    justify-content: center;
+    
+    align-items: center;
+    margin: 20px 0
+    }
+    
+    .Hero_description {
+    
+    font-weight: 100;
+    line-height: 3rem;
+    letter-spacing: .00735em;
+    text-align-last: auto;
+    
+    color: #fff;
+    font-size: 20px;
+    line-height: 1.5em;
+    padding: 0.2rem 1rem;
+    border: 6px #f5c518;
+    border-left-style: solid;
+    margin: 10px;
+    }
+    
+    #searchContainer {
+    background:radial-gradient(circle at 74.2% 50.9%, rgb(14, 72, 222) 5.2%, rgb(3, 22, 65) 75.3%);
+    margin: 5px;
+    text-align: center;
+    width:auto;
+    height: 500px;
+    
+    }
+    .search_description {
+    color: #fff;
+    font-size: 30px;
+    line-height: 1.5em;
+    padding: 2rem ;
+    
+    margin: 16px 0
+    }
+    
+    #myWatched {
+    background-image: url(../../assets/media/home-film1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    
+    /* background-attachment: fixed; */
+    
+    width:auto;
+    height: 600px;
+    
+    margin-top:10px;
+    
+    }
+    
+    .mywatched_description>h2 {
+    
+    color: #f5c518;
+    font-size: 40px;
+    line-height: 1em;
+    padding: 0px ;
+    display:flex;
+    justify-content: left;
+    align-items: left;
+    margin-top:50px;
+    margin-bottom: 20px;
+    }
+    .mywatched_description>p {
+    
+    color: #f5c518;
+    font-size: 30px;
+    line-height: 1.5em;
+    padding: 0px;
+    
+    margin-bottom: 20px;
+    }
+    
+    #trending {
+    background-image: url(../../assets/media/top-movies1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    /* background-attachment: fixed; */
+    width:auto;
+    height: 600px;
+    margin-top:10px;
+    /* justify-content: center; */
+    display:flex;
+    justify-content: end;
+    align-items: center;
+    }
+    
+    
+    .trending_description> h2 {
+    
+    color: #fffefe;
+    font-size: 40px;
+    line-height: 2rem;
+    padding: 10px ;
+    
+    text-align: right;
+    align-items: center;
+    margin: 0px ;
+    }
+    .trending_description>p {
+    
+    color: #fcf8f8;
+    font-size: 30px;
+    line-height: 2rem;
+    padding: 2rem ;
+    text-align: right;
+    align-items: center;
+    margin: 16px 
+    }
+    #displayContainer .trend_btn {
+    background-color: #f56918;
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    }
+    #movies .Hero_title{
+      color: #f5c518;
+      text-align: left;
+    }
+    footer{
+      background-color: #3b3b3d;
+    }
+    .footer_description {
+    font-weight: 50;
+    color: #fff;
+    font-size: 10px;
+    
+    padding: 2rem ;
+    border: 6px #f5c518;
+    border-left-style: solid;
+    background-color: rgb(26, 26, 27,0.1);
+    margin: 16px;
+    display:flex;
+    flex-direction: column;
+    }
+
 }
