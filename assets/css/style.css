@@ -323,7 +323,7 @@ body {
   
   }
   
-  @media (max-width: 480px) {
+  @media (max-width: 768px) {
     .Hero_title__S57s_ {
         font-size:35px
     }
