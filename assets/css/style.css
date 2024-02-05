@@ -68,8 +68,8 @@ background-repeat: no-repeat;
 background-size: cover;
 background-position: center center;
 background-attachment: fixed; 
-width:auto;
-height: 600px;
+width:100%;
+height: 700px;
 }
 
 .Hero_section{
